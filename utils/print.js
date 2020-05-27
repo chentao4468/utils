@@ -4,7 +4,7 @@
  * 通用： step1：在公共方法里加入 print.js，
  *        step: 在main.js 里面注册使用  引入print： import Print from '@/utils/print'  Vue.use(Print)
  *        step3：设置需要打印的区域 添加属性 ref="print" ，如果里面有自己不想打印的模块，给个class=“no-print” ， 然后 this.$Print(this.$refs.print,{'no-print':'.do-not-print-me-xxx'}) // 使用
- *   如果是ts文件，不能从 main.js 中注册使用 ，屏蔽实例化，当做普通的方法就可以了   
+ *   如果是ts文件，不能从 main.js 中注册使用 ，屏蔽实例化，当做普通的方法使用就可以了    import Print from '@/utils/print' 
  *
  * 
  */
